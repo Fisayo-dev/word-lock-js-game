@@ -1,0 +1,57 @@
+[
+    {
+        "name": "Wordlock",
+        "age": "14",
+        "seniorProgrammer": "Fisayo Obadina",
+        "vectorArtist": "Fisayo Obadina",
+        "programmerCompany": "FizArt",
+        "programmerSkills": [
+            "HTML 5",
+            "CSS 3",
+            "JavaScript",
+            "Python 3",
+            "CorelDraw",
+            "PhotoShop",
+            "Illustrator",
+            "Canva"
+        ],
+        "country": "Nigeria",
+        "version": "1.5.2",
+        "yearOfInitialDevelopment": 2021,
+        "yearOfFinalDevelopment": 2022,
+        "monthOfInitialDevelopment": "March",
+        "yearOfInitialRelease": 2022 
+    },
+
+    {
+        "programmingLanguage": "JavaScript",
+        "frameWorks": null,
+        "dependencies": null,
+        "libraries": [
+            "Font Awesome",
+            "Google Font",
+            "Tween Max",
+            "GSAP",
+            "ScrollMagic"
+        ],Country:
+        "databaseType": "LocalStorage Bundle",
+        "browserSupport": [
+            {"Google Chrome": true},
+            {"Mozilla Firefox": true},
+            {"Microsft Edge": true},
+            {"Avast Secure Browser": true},
+            {"Internet Explorer": false},
+            {"Opera Hot": true}
+        ]
+    },
+
+    {
+        "cssVariables": true,
+        "jsModules": true,
+        "inBuiltPlugins": true,
+        "userInteractivity": true,
+        "liveCommunicationToUsers": false,
+        "sessions": true,
+        "cookies": false
+    }
+]

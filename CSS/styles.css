@@ -1,0 +1,280 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+body {
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: linear-gradient(to right bottom,#ee3145,#e0028b); */
+    background-color: rgb(248, 248, 248);
+    min-height: 100vh;
+}
+
+form {
+    display: grid;
+    margin: auto;
+    width: 30%;
+    max-height: 90vh;
+    overflow: hidden;
+    background: #fff;
+    z-index: 2;
+    border: none;
+    /* padding: 1 0; */
+    border-radius: 10px;
+    box-shadow: 3px 2px rgba(0,0,0,0.1);
+    box-shadow: rgba(0,0,0,.13) 0 1px 2px 0, rgba(0,0,0,.15) 0px 1px 3px ;
+
+}
+
+form p {
+    color: #000;
+    padding: 5px 10px;
+}
+
+form .signup {
+    max-height: 68vh;
+    overflow: scroll;
+    padding: 0;
+}
+
+.about-section {
+    background-color:#fff;
+    width: 35%;
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    /* filter: blur(16px); */
+}
+
+.about-section .header {
+    padding: 10px;
+    background: #f5970b;
+    text-align: center;
+    color: #fff;
+}
+.about-section .header h2 {
+    padding: 5px;
+    font-size: 32px;
+    display: inline;
+    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+}
+
+.exceptional {
+    text-transform: none !important;
+}
+.about-section .cont {
+    padding: 10px; 
+    font-size: 15px;  
+    text-align: center;
+}
+
+.btn-sec{
+    display: grid;
+    width: 87%;
+    margin: auto;
+    grid-template-columns: repeat(2,1fr);
+}
+
+
+.about-section .footer .footer-links {
+    background: #32c3e7;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 14px;
+}
+
+.about-section .footer .footer-links.active {
+    background-color: crimson;
+}
+
+
+.btn {
+    padding: 5px;
+    margin: 5px auto;
+    margin-bottom: 20px;
+    font-size: 18px;
+    border: none;
+
+    outline: none;
+    border-radius: 5px;
+    background: #f5970b;
+    color: #fff;
+    width: 50%;
+    cursor: pointer;
+}
+
+
+.btn:hover {
+    background: #d68306;
+}
+
+form .field {
+    padding: 5px;
+    margin: 8px;
+    display: grid;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #f5970b;
+    /* margin: 0px; */
+    /* background: dodgerblue; */
+    border-radius: 6px;
+}
+
+form .field  small {
+    padding: 5px 0;
+    color: #000;
+}
+
+form .field input{
+    font-size: 15px;
+    padding: 5px 0;
+    font-family: inherit;
+    font-weight: bolder;
+    border: none;
+    outline: none;
+    color: #000;
+
+    background-color: transparent;
+    text-transform: capitalize;
+    padding: 5px;
+    border: 2px solid #f5970b;
+}
+
+form .field input::placeholder {
+    color: rgba(0,0,0,0.7);
+}
+
+.field label {
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.field select {
+    margin: 10px 0;
+    font-size: 15px;
+    padding: 5px 0;
+    outline: none;
+    background: transparent;
+    color: #000;
+    border: 2px solid #f5970b;
+    cursor: pointer;
+
+}
+
+.field select option {
+    color: #000;
+}
+
+.link-signup-text {
+    text-align: center;
+    padding:0;
+    margin: 0;
+}
+
+.link-signup-text a {
+    color: #f5970b;
+    font-weight: bold;
+}
+
+form header{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    cursor: pointer;
+    z-index: 70;
+    /* backdrop-filter: blur(900px); */
+    position: sticky;
+    border-bottom: 3px solid #f5970b;
+    top: 0;
+    width: 100%;
+
+}
+form header h2 {
+    z-index: 5;
+    color: #000;
+}
+/* 
+form header::after {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(227, 232, 238, 0.5);
+
+} */
+
+img {
+    position: absolute;
+    z-index:-1;
+    width: 10%;
+}
+
+#img1 {
+    left: 5%;
+    top: 20%;
+}
+#img2 {
+    right: 5%;
+    top: 20%;
+}
+#img3 {
+    left: 50%;
+    bottom: 20%;
+}
+#img4 {
+    left: 18%;
+    bottom: 10%;
+}
+#img5 {
+    right: 50%;
+    top: 2%;
+}
+
+#img6 {
+    left: 70%;
+    top: 75%;
+    transform: rotate(-30deg);
+
+}
+
+@media screen and (max-width: 900px){
+    form {
+        max-width: 60%;
+    }
+
+    img {
+        width: 20%;
+    }
+
+    #img3 {
+        top: 50%;
+    }
+
+    #img4 {
+        left: 5%;
+    }
+}
+@media screen and (max-width: 500px){
+    form {
+        max-width: 80%;
+    }
+}
