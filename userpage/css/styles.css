@@ -1,11 +1,9 @@
+@import url('incs.css');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'euclid_circular_a', arial,"source sans pro",helvetica, helvetica,arial,sans-serif;
-    font-family: arial,Arial, Helvetica, sans-serif;
-    font-family: Century Gothic;
-    font-family: 'Microsoft Yahei Ui';
     font-family: Montserrat;
     /* color: hsl(252,30%,17%); */
 }
@@ -15,27 +13,7 @@ h2 {
     padding: 5px;
 }
 
-:root {
-    --lewandoski: red;
-    --mbappe: 130px;
-    --neymar: rgb(246,176,50);
-    --messi: dodgerblue;
-    --container-color: rgba(255,255,255,0.9);
-    --fisayo: #fff;
-    --standard-middle-card-width: 50%;
-    --media-screen-middle-container-width: 60%;
-    --standard-title-card-font-size:18px;
-    --app-light-grey-color: #ddd;
-    --app-dark-grey-color: #aaa;
-    --side-card-widget-x: 5%;
-    --side-card-widget-y: 2%;
-    --card-widget-font-size: 18px;
-    --standard-padding: 10px;
-    --mini-card-padding: 6px;
-    --header-padding: 8px 30px;
-    --left-side-panel-y: 8%;
-    --left-side-panel-x: 1%;
-}
+
 
 body {
     display: flex;
@@ -285,16 +263,20 @@ a:hover {
 
 .form .field {
     display: grid;
-    margin: 5px 0;
+    margin: 10px 20px;
+    gap: 10px;
     padding: 5px 10px;
 }
 
+.form .field label {
+    font-size: 18px;
+}
 
 .form .field input {
     outline: none;
     border: 2px solid var(--neymar);
-    padding: 5px;
-    margin: 10px 0;
+    padding: 8px;
+    font-size: 16px;
 }
 
 .chat-view, .notification-sec, .preferences {

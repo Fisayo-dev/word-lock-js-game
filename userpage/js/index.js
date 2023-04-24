@@ -1,3 +1,4 @@
+
 const gamePage = document.querySelector('.game-page')
 const homePage = document.querySelector('.home-section')
 const gameLevels = document.querySelectorAll('.box-level')
@@ -13,10 +14,139 @@ let index = 0;
 function collect(val) {
     return document.querySelector(`.${val}`)
 }
+
 const words = [
     {
         word: 'pronunciation',
         type: '9'
+    },
+    {
+        word: 'quadilateral',
+        type: "2"
+    },
+    {
+        word: 'mensuration',
+        type: "2"
+    },
+    {
+        word: 'equations',
+        type: "2"
+    },
+    {
+        word: 'logarithms',
+        type: "3"
+    },
+    {
+        word: 'construction',
+        type: "3"
+    },
+    {
+        word: 'denomination',
+        type: "3"
+    },
+    {
+        word: 'factorisation',
+        type: "4"
+    },
+    {
+        word: 'permutation',
+        type: "4"
+    },
+    {
+        word: 'simultaneous',
+        type: "4"
+    },
+    {
+        word: 'statistics',
+        type: "5"
+    },
+    {
+        word: 'discriminant',
+        type: "5"
+    },
+    {
+        word: 'polynomials',
+        type: "5"
+    },
+    {
+        word: 'parabola',
+        type: "5"
+    },
+    {
+        word: 'supplementary',
+        type: "6"
+    },
+    {
+        word: 'equilateral',
+        type: "6"
+    },
+    {
+        word: 'differentiation',
+        type: "6"
+    },
+    {
+        word: 'approximation',
+        type: "6"
+    },
+    {
+        word: 'sequences',
+        type: "7"
+    },
+    {
+        word: 'adjacent',
+        type: "7"
+    },
+    {
+        word: 'pyramid',
+        type: "7"
+    },
+    {
+        word: 'geometry',
+        type: "8"
+    },
+    {
+        word: 'polygons',
+        type: "8"
+    },
+    {
+        word: 'probability',
+        type: "8"
+    },
+    {
+        word: 'inequalities',
+        type: "8"
+    },
+    {
+        word: 'reciprocals',
+        type: "9"
+    },
+    {
+        word: 'longitude',
+        type: "9"
+    },
+    {
+        word: 'percentage',
+        type: "1"
+    },
+    {
+        word: 'proportions',
+        type: "1"
+    },
+    {
+        word: 'theorems',
+        type: "1"
+    },
+    {
+        word: 'geodesy',
+        type: "9"
+    },
+    {
+        word: 'mulitplication',
+        type: "1"
+    },
+    {
+        word: 'sextillions',
+        type: "9"
     },
     {
         word: 'elegant',
@@ -87,9 +217,6 @@ const words = [
         type: '9'
     }
 ]
-
-
- 
 
 
 function showAlert(title,msg,type) {
@@ -172,7 +299,6 @@ function showLevelContent(level,levelName) {
         // Filter words based on the level type
         words
         .filter(word => word.type === levelName)
-        // shuffledWord = words.sort(() => Math.random() - .4)
         .map(word =>  { 
             selectedLevelWords.push(word.word);
             // console.log(shuffledWord);
@@ -192,11 +318,7 @@ function createWordOnScreen(levelWords) {
     displayText(where,where2,shuffledLevelWords)
 }
 
-function displayText(where,where2,selectedLevelWords) {
-    // Creating an array from the selected word in the selected level
-    const textArray = Array.from(selectedLevelWords[index])
-    console.log(textArray);
-    
+function updatingComponents(textArray) {
     // Adding the correct text
     let correctText = '';
     textArray.forEach(word => correctText += word)
@@ -206,8 +328,16 @@ function displayText(where,where2,selectedLevelWords) {
     let finalText = '';
     const scrambledLevelWords = textArray.sort(() => Math.random() - .4)
     scrambledLevelWords.forEach(word => finalText += word)
-    where.innerText = finalText
+    where.innerText = finalText.toUpperCase()
     console.log(`UnScrambled Word: ${finalText}`);
+}
+
+function displayText(where,where2,selectedLevelWords) {
+    // Creating an array from the selected word in the selected level
+    const textArray = Array.from(selectedLevelWords[index])
+    console.log(textArray);
+    
+    updatingComponents(textArray)
     
     // Validating result when the submit btn is pressed
     subBtn.addEventListener('click', () => {
@@ -241,16 +371,7 @@ function displayNextQuestion(textList,where,where2) {
     const textArray = Array.from(textList[index])
     console.log(textArray);
     
-    // Adding the correct text
-    let correctText = '';
-    textArray.forEach(word => correctText += word)
-    where2.innerText = correctText;
-    
-    // Adding the unScrambled text 
-    let finalText = '';
-    const unScrambledLevelWords = textArray.sort(() => Math.random() - .4)
-    unScrambledLevelWords.forEach(word => finalText += word)
-    where.innerText = finalText
+    updatingComponents(textArray)
     
     
     // Reset work section

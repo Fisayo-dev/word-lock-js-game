@@ -1,11 +1,3 @@
-function collect(val) {
-    return document.querySelector(`.${val}`)
-}
-
-function get(val) {
-    return document.querySelector(`#${val}`)
-}
-
 const pwd = get('pwd') 
 const rpwd = get('rpwd') 
 const email = get('email') 
@@ -25,7 +17,6 @@ function correct(el) {
     el.parentElement.querySelector('small').innerText = null
     el.style.border = `2px solid rgb(246,176,50)`
 }
-
 
 class DB {
     constructor(fname,lname,age,email,pwd,country,date,type) {
@@ -52,6 +43,13 @@ class DB {
     }
 }
 
+function collect(val) {
+    return document.querySelector(`.${val}`)
+}
+
+function get(val) {
+    return document.querySelector(`#${val}`)
+}
 
 function correct(el) {
     el.parentElement.querySelector('small').innerText = ''

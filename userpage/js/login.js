@@ -12,6 +12,8 @@ const page = collect('page')
 const email = get('email-field')
 const password = get('password-field')
 
+const INIT_CREATE_DATE = 2021
+
 
 class Friend {
     constructor(name,email,for1,for2){
@@ -103,6 +105,7 @@ function showUserPage(fname,lname,country,age) {
     page.classList.remove('none')
 
     get('usernameLoginField').innerHTML = `${fname} ${lname}`;
+    collect('footer .left').innerHTML = `Copyright ${INIT_CREATE_DATE} - ${new Date().getFullYear()}`
     get('countryField').innerHTML = `${country} (${age} yrs) <a href="../about.html">About</a>`
 }
 

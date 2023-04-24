@@ -1,0 +1,21 @@
+:root {
+    --lewandoski: red;
+    --mbappe: 130px;
+    --neymar: rgb(246,176,50);
+    --messi: dodgerblue;
+    --container-color: rgba(255,255,255,0.9);
+    --fisayo: #fff;
+    --standard-middle-card-width: 50%;
+    --media-screen-middle-container-width: 60%;
+    --standard-title-card-font-size:18px;
+    --app-light-grey-color: #ddd;
+    --app-dark-grey-color: #aaa;
+    --side-card-widget-x: 5%;
+    --side-card-widget-y: 2%;
+    --card-widget-font-size: 18px;
+    --standard-padding: 10px;
+    --mini-card-padding: 6px;
+    --header-padding: 8px 30px;
+    --left-side-panel-y: 8%;
+    --left-side-panel-x: 1%;
+}
