@@ -187,13 +187,14 @@
 
 .btn {
     background:  #f5970b;
-
     color: #fff;
     border: none;
     outline: none;
-    margin: 20px auto;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 60%;
     font-size: 1.2rem;
-    padding: 5px 20px;
+    padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
 }

@@ -11,9 +11,6 @@ body {
     background-size: cover; 
     background-repeat: no-repeat;
     background-position: center; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
     /* background: linear-gradient(to right bottom,#ee3145,#e0028b); */
     background-color: rgb(248, 248, 248);
     min-height: 100vh;
@@ -21,15 +18,12 @@ body {
 
 form {
     display: grid;
-    margin: auto;
+    margin: 6vmin auto;
     width: 30%;
-    max-height: 90vh;
-    overflow: hidden;
     background: #fff;
     z-index: 2;
     border: none;
-    /* padding: 1 0; */
-    border-radius: 10px;
+    border-radius: 8px;
     box-shadow:  0px 0px 10px 2px rgba(0,0,0,0.1);
     /* box-shadow: rgba(0,0,0,.13) 0 1px 2px 0, rgba(0,0,0,.15) 0px 1px 3px ; */
 
@@ -41,8 +35,6 @@ form p {
 }
 
 form .signup {
-    max-height: 68vh;
-    overflow: scroll;
     padding: 0;
 }
 
@@ -144,17 +136,15 @@ form .field  small {
 }
 
 form .field input{
-    font-size: 15px;
-    padding: 5px 0;
+    font-size: 17px;
+    padding: 8px;
     font-family: inherit;
     font-weight: bolder;
     border: none;
     outline: none;
     color: #000;
-
     background-color: transparent;
     text-transform: capitalize;
-    padding: 5px;
     border: 2px solid #f5970b;
 }
 
@@ -166,6 +156,7 @@ form .field input::placeholder {
     font-weight: 500;
     color: #000;
     margin-bottom: 10px;
+    font-size: 18px;
 }
 
 .field select {
@@ -202,7 +193,6 @@ form header{
     cursor: pointer;
     z-index: 70;
     /* backdrop-filter: blur(900px); */
-    position: sticky;
     border-bottom: 3px solid #f5970b;
     top: 0;
     width: 100%;
@@ -267,6 +257,10 @@ img {
         width: 20%;
     }
 
+    .about-section {
+        width: 60%;
+    }
+
     #img3 {
         top: 50%;
     }
@@ -277,6 +271,10 @@ img {
 }
 @media screen and (max-width: 500px){
     form {
+        width: 95%;
+    }
+
+    .about-section {
         width: 95%;
     }
 }

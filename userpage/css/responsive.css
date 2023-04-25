@@ -75,8 +75,12 @@
         padding: 0 !important;
     }
 
-    .form, .app-header, .game-app, .footer{
+    .app-header, .game-app, .footer{
         width: 80%;
+    }
+
+    .form {
+        width: 95%;
     }
 
     .msg-box {
