@@ -132,7 +132,7 @@ btn.addEventListener('click', (e) => {
         const user = new DB(fname.value,lname.value,age.value,email.value,pwd.value,nation[0], new Date(), 'user')
         DB.login(user)
 
-        location.replace('file:///C:/Users/User/Desktop/DESKTOP%20FOLDERS/FRUIT%20APP/word-lock-js-game/userpage/page.html')
+        location.replace('https://fisayo-dev.github.io/word-lock-js-game/userpage/page.html')
         clearFields()
     }
 
