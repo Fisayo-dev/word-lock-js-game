@@ -41,6 +41,7 @@ body {
     margin: 8px;
     text-align: center;
     border: 3px solid #ce7e06;
+    transition: 0.2s ease-in-out;
 }
 
 a {
@@ -51,6 +52,7 @@ a {
 .btn:hover {
     border-color: #fff;
     /* color: #ce7e06; */
+    transform: scale(1.07);
     cursor: pointer;
 }
 
@@ -60,4 +62,28 @@ a {
     width: 100vw;
     height: 100vh;
     object-fit: cover;
+}
+
+@media screen and (max-width: 690px) {
+    .wrapper .btn-sec{
+        display: grid;
+        gap: 0px;
+        width: 100%;
+        margin: 8px 0;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .btn-sec a .btn {
+        margin: 2px 8px;
+    }
+
+    .wrapper h1 {
+        font-size: 3em;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .wrapper h1 {
+        font-size: 1.8em;
+    }
 }
