@@ -1,0 +1,135 @@
+@import url('incs.css');
+
+@media screen and (max-width: 1080px) {
+
+    .game-app,.app-header,.footer {
+        width: var(--media-screen-middle-container-width);
+    }
+   
+    .boxes .box-level {
+        font-size: 16.7px;
+    }
+}
+
+@media screen and (max-width: 1030px){
+    .chat-view {
+        display: none;
+    }
+    .search-side { 
+        /* right: 40%; */
+        right: calc(100%-60%); 
+    } 
+
+    .tabSec {
+        display: none;
+    }
+}
+
+@media screen and (max-width:900px){
+    /* .box-section {
+        width: 70%;
+    }  */
+
+    .search-bar input {
+        display: none;
+    }
+
+    .search-bar {
+        /* width: auto; */
+        align-items: unset;
+        border-radius: 50%;
+    }
+    .form, .app-header, .game-app, .footer{
+        width: 70%;
+    }
+
+    .msg-box {
+        width: 60%;
+    }
+
+    .user-info h2 {
+        font-size: 20px;
+    }
+    .user-info .right .link, .user-info .btn-submit {
+        font-size: 14px;        
+
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .menu {
+        display: grid !important;
+
+        cursor: pointer;
+    }
+
+
+    .app-header .right {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 770px) {
+    .home-section {
+        padding: 0 !important;
+    }
+
+    .form, .app-header, .game-app, .footer{
+        width: 80%;
+    }
+
+    .msg-box {
+        width: 75%;
+    }
+    
+
+    .box-level {
+        font-size: 12px !important;
+    }
+
+}
+
+
+
+@media screen and (max-width: 640px) {
+    .game-app,.footer,.app-header {
+        width: 95%;
+        border-radius: 10px;
+    }
+
+    .msg-box {
+        width: 80%;
+    }
+}
+
+
+
+
+@media screen and (max-width: 540px) {
+
+    .user-info .right {
+        display: none;
+    }
+
+    .menu-bar {
+        display: grid;
+    }
+
+    .btn-holder {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 490px){
+    .boxes {
+        width: 100% !important;
+        margin: 20px auto ;
+    }
+}
+
+@media screen and (max-width: 430px){
+    .btn-holder {
+        grid-template-columns: repeat(5,1fr);
+    }
+}
