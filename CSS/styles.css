@@ -41,7 +41,7 @@ form .signup {
 .about-section {
     background-color:#fff;
     width: 35%;
-    margin: auto;
+    margin: 20vmin auto;
     border-radius: 10px;
     overflow: hidden;
     /* filter: blur(16px); */
