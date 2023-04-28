@@ -329,13 +329,13 @@ function updatingComponents(textArray) {
     const scrambledLevelWords = textArray.sort(() => Math.random() - .4)
     scrambledLevelWords.forEach(word => finalText += word)
     where.innerText = finalText.toUpperCase()
-    console.log(`UnScrambled Word: ${finalText}`);
+    // console.log(`UnScrambled Word: ${finalText}`);
 }
 
 function displayText(where,where2,selectedLevelWords) {
     // Creating an array from the selected word in the selected level
     const textArray = Array.from(selectedLevelWords[index])
-    console.log(textArray);
+    // console.log(textArray);
     
     updatingComponents(textArray)
     
