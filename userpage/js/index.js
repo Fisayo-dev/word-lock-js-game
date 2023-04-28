@@ -141,7 +141,7 @@ const words = [
         type: "9"
     },
     {
-        word: 'mulitplication',
+        word: 'multiplication',
         type: "1"
     },
     {
