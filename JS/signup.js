@@ -132,10 +132,11 @@ btn.addEventListener('click', (e) => {
         const user = new DB(fname.value,lname.value,age.value,email.value,pwd.value,nation[0], new Date(), 'user')
         DB.login(user)
 
-        location.href= 'https://fisayo-dev.github.io/word-lock-js-game/userpage/page.html'
+        location.replace('https://fisayo-dev.github.io/word-lock-js-game/userpage/page.html')
+
         clearFields()
     }
-
+    
     // if(check == true) {
     //     wrong(email,'Email Address already taken')
     // }
