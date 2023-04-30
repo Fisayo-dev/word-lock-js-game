@@ -27,7 +27,7 @@
             <label>Password:</label>
             <input id="password-field" type="password" placeholder="security">
         </div>
-        <p>Get started with  Word Lock game!!  <br> <a style="font-weight: 900;" href="../signup.html">SignUp here</a></p>
+        <p>Get started with  Word Lock game!! <a style="font-weight: 900;" href="../signup.html">SignUp here</a></p>
         <button id="login-btn" class="btn">Login</button>
     </form>
     
@@ -295,7 +295,14 @@
         })
 
         const clearIcon = document.querySelector('.clear-icon')
-        clearIcon.addEventListener('click', () => screen.value = '')
+        clearIcon.addEventListener('click', () => { 
+            const texts = Array.from(screen.value)
+            texts.pop()
+            let newText = ''
+            texts.map(text => newText += text)
+
+            screen.value = newText
+        })
 
     </script>
     <script type="text/javascript">
