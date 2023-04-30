@@ -136,7 +136,7 @@ btn.addEventListener('click', (e) => {
 
         clearFields()
     }
-
+    
     // if(check == true) {
     //     wrong(email,'Email Address already taken')
     // }
