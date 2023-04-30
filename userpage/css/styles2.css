@@ -115,6 +115,16 @@
     }
 }
 
+@keyframes bounce {
+    0% {
+        transform: translateX(-70%);
+    }
+    
+    100% {
+        transform: translateX(0);
+    }
+}
+
 @keyframes fadeOff {
     50% {
         position: absolute;
@@ -127,13 +137,8 @@
 
     }
 }
-.msg-box {
-    overflow: hidden;
-}
 
-.msg-box img{
-    animation: turn 5s infinite ease-in-out;
-}
+
 
 .box-level h3 {
     font-size: 32px;

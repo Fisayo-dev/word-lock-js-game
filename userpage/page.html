@@ -295,7 +295,14 @@
         })
 
         const clearIcon = document.querySelector('.clear-icon')
-        clearIcon.addEventListener('click', () => screen.value = '')
+        clearIcon.addEventListener('click', () => { 
+            const texts = Array.from(screen.value)
+            texts.pop()
+            let newText = ''
+            texts.map(text => newText += text)
+
+            screen.value = newText
+        })
 
     </script>
     <script type="text/javascript">
