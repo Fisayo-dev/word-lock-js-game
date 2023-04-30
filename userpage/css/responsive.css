@@ -75,12 +75,8 @@
         padding: 0 !important;
     }
 
-    .app-header, .game-app, .footer{
+    .form,.app-header, .game-app, .footer{
         width: 80%;
-    }
-
-    .form {
-        width: 95%;
     }
 
     .msg-box {
@@ -100,6 +96,10 @@
     .game-app,.footer,.app-header {
         width: 95%;
         border-radius: 10px;
+    }
+
+    .form {
+        width: 89%;
     }
 
     .msg-box {
@@ -135,5 +135,21 @@
 @media screen and (max-width: 430px){
     .btn-holder {
         grid-template-columns: repeat(5,1fr);
+    }
+
+    .box-section .top .desc, .box-section .top .time {
+        font-size: 15.4px;
+    }
+
+    /* .footer {
+        font-size: 16px;
+    } */
+
+    .form .field label{
+        font-size: 16px;
+    }
+
+    .form p {
+        margin: 0 20px;
     }
 }
