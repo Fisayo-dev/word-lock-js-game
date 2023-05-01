@@ -315,6 +315,10 @@ a:hover {
 }
 
 
+.msg-box img {
+    animation: bounce 1.2 1 linear forwards;
+}
+
 
 /* Menu Content */
 .menu-bar-content {

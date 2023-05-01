@@ -259,6 +259,7 @@ function showAlert(title,msg,type) {
             
         case 'info':
             msgImg.setAttribute('src','../img/Game logo 2.png') 
+            msgImg.setAttribute('')
         break;
 
         default: 
